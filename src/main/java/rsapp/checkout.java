@@ -33,7 +33,7 @@ public class checkout extends HttpServlet {
           response.setContentType("application/json");
 		
           PrintWriter pw = response.getWriter();
-          pw.print("{ \"status:\" \"" + msg +"\", \"transactionTime:\" \"" + delay + "ms\" }");
+          pw.print("{ \"status\": \"" + msg +"\", \"transactionTime\": \"" + delay + "ms\" }");
           pw.flush();
 
         } else {
