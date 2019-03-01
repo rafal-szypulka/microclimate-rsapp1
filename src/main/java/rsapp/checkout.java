@@ -27,6 +27,7 @@ public class checkout extends HttpServlet {
         }
 
         if ( errorState ) {
+          msg = "Transaction OK.";
           //msg = "BADAP0001I: Transaction OK.";
           //logger.info(msg);
           response.setContentType("application/json");
